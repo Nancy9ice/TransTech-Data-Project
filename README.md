@@ -28,7 +28,7 @@ The transformed datasets are found [in this link](https://drive.google.com/file/
 The one named "cleaned_dataset2.csv" is the immediate dataset after geocoding while the one named "uber.csv" is the one uploaded to Amazon Redshift that contains only relevant columns. 
 
 ## Questions 
----
+
 1. What are the earliest and latest times of the rides?
 2. How many rides were there in each month?
 3. What were the total rides for the top 10 pickup counties?
@@ -56,7 +56,8 @@ The following steps were carried out to go from to my unclean, unusable dataset 
 * Data was queried from Amazon Redshift to answer questions.
 
 ## Answers to Stated Questions
-1. What are the earliest and latest times of the rides?
+
+### 1. What are the earliest and latest times of the rides?
 
 ```sql
 SELECT Min(time) AS earliest_time, Max(time) AS latest_time
@@ -70,7 +71,7 @@ According to the results, the uber rides went round the clock.
 ![](Earliest%20and%20Latest%20Time.PNG)
 
 
-2. How many rides were there in each month?
+### 2. How many rides were there in each month?
 
 ```sql
 SELECT TO_CHAR(date, 'Month') AS month, COUNT(*)
@@ -85,7 +86,7 @@ The rides increased as time advanced. This could be a proof that the marketing s
 
 ![](Rides%20by%20Month.PNG)
 
-3. What were the total rides for the top 10 pickup counties?
+### 3. What were the total rides for the top 10 pickup counties?
 
 ```sql
 SELECT DISTINCT(county), COUNT(*)
@@ -111,7 +112,7 @@ However, I would advise that Uber focuses more on regions that have relatively l
 
 They can also extend their tentacles outside New York City. 
 
-4. What were the total rides for the bottom 10 pickup counties?
+### 4. What were the total rides for the bottom 10 pickup counties?
 
 ```sql
 SELECT DISTINCT(county), COUNT(*)
@@ -127,7 +128,7 @@ Depending on the goals of Uber, they could either close down theur services in t
 
 ![](Bottom%2010%20Rides%20by%20County.PNG)
 
-5. What were the total rides for the respective pickup locations?
+### 5. What were the total rides for the respective pickup locations?
 
 ```sql
 SELECT DISTINCT(location), COUNT(*)
@@ -144,7 +145,7 @@ According to the results, Uber is well known in New York City than other states 
 
 ![](Rides%20by%20Locations.PNG)
 
-6. What were the total rides by day?
+### 6. What were the total rides by day?
 ```sql
 SELECT TO_CHAR(date, 'day') AS day, COUNT(*)
 FROM uber2014
@@ -158,7 +159,7 @@ Looking at these results, there's not much gap amongst the total rides for the d
 
 ![](Rides%20by%20Day.PNG)
 
-7. How many vehicles are allocated to the registered base stations and locations?
+### 7. How many vehicles are allocated to the registered base stations and locations?
 
 ```sql
 SELECT DISTINCT(base_region), base_name, COUNT(*)
@@ -179,7 +180,7 @@ The base_name are the names for each  company associated with the assigned base 
 
 ![](Rides%20by%20Bases.PNG)
 
-8. According to your answer in number 7, is it advisable to regsiter more base stations or stick to the already registered base stations?
+### 8. According to your answer in number 7, is it advisable to regsiter more base stations or stick to the already registered base stations?
 
 According to the results, it's obvious that the base stations are only located in New York City. So what about the regions outside New York City(NYC? 
 
