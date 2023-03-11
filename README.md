@@ -3,6 +3,8 @@ This project is a proof of my ability to work with big data using Pyspark(python
 
 ![](https://images.unsplash.com/photo-1554260570-83dc2f46ef79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8VHJhbnNwb3J0YXRpb24lMjBUZWNobm9sb2d5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60 "Image by @austindistel on Unsplash.com")
 
+*Image by [austindistel](https://unsplash.com/@austindistel) on Unsplash*
+
 ## Introduction
 
 This project is based on the Transportation industry (specifically Uber) in United States to show my skills in handling big data.
