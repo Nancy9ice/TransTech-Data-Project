@@ -17,7 +17,7 @@ The following tools and skills were used in this project:
 * **Pyspark** (Python API of Spark) used to transform the data.
 * **PostGIS** used to geocode the spatial data.
 * **PostgreSQL** hosted the PostGIS extension used.
-* **Jupyter Notebook** used to editand run my pyspark scripts
+* **Jupyter Notebook** used to edit and run my pyspark scripts
 * **Amazon S3** used to store the already transformed data
 * **Amazon Redshift** used to query the data to answer questions
 
