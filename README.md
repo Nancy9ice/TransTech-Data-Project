@@ -64,7 +64,7 @@ SELECT Min(time) AS earliest_time, Max(time) AS latest_time
 FROM uber2014
 ```
 
-Results
+**Results**
 
 According to the results, the uber rides went round the clock.
 
@@ -80,7 +80,7 @@ GROUP BY month
 ORDER BY COUNT(*) DESC
 ```
 
-Results
+**Results**
 
 The rides increased as time advanced. This could be a proof that the marketing strategies of Uber are working or customers are satisfied with the services and refer their friends and family. 
 
@@ -96,7 +96,7 @@ ORDER BY COUNT(*) DESC
 LIMIT 10
 ```
 
-Results
+**Results**
 
 For context, New York County and Kings County are the same as Manhattan and Brooklyn respectively. According to the results, Manhattan has the most rides.
 
@@ -122,7 +122,7 @@ ORDER BY COUNT(*)
 LIMIT 10
 ```
 
-Results
+**Results**
 
 Depending on the goals of Uber, they could either close down theur services in these regions that have extremely low patronage or strategize on how to increase awareness and take out any competition that might be there. 
 
@@ -137,7 +137,7 @@ GROUP BY location
 ORDER BY COUNT(*) DESC
 ```
 
-Results
+**Results**
 
 Take note that New York City is in New York State and are somewhat different. New York City comprises five boroughs: Brooklyn (Kings), Queens, Manhattan, the Bronx, and Staten Island (Richmond). 
 
@@ -153,7 +153,7 @@ GROUP BY day
 ORDER BY COUNT(*) DESC
 ```
 
-Results
+**Results**
 
 Looking at these results, there's not much gap amongst the total rides for the different days so we can't just outrightly conclude that most people use Uber on certain days. 
 
@@ -168,7 +168,7 @@ GROUP BY base_region, base_name
 ORDER BY COUNT(*) DESC
 ```
 
-Results
+**Results**
 
 For comtext, let me briefly explain what Base stations mean. 
 
@@ -180,7 +180,7 @@ The base_name are the names for each  company associated with the assigned base 
 
 ![](Rides%20by%20Bases.PNG)
 
-### 8. According to your answer in number 7, is it advisable to regsiter more base stations or stick to the already registered base stations?
+### 8. According to your answer in number 7, is it advisable to register more base stations or stick to the already registered base stations?
 
 According to the results, it's obvious that the base stations are only located in New York City. So what about the regions outside New York City(NYC? 
 
