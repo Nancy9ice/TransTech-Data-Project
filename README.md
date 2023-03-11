@@ -4,13 +4,13 @@ This project is a proof of my ability to work with big data using Pyspark(python
 ![](https://images.unsplash.com/photo-1554260570-83dc2f46ef79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8VHJhbnNwb3J0YXRpb24lMjBUZWNobm9sb2d5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60 "Image by @austindistel on Unsplash.com")
 
 ## Introduction
----
+
 This project is based on the Transportation industry (specifically Uber) in United States to show my skills in handling big data.
 
 *Disclaimer: This dataset was gotten from the [shared uber dataset on github](https://github.com/fivethirtyeight/uber-tlc-foil-response).*
 
 ## Skills/concepts demonstrated
----
+
 The following tools and skills were used in this project:
 * **Pyspark** (Python API of Spark) used to transform the data.
 * **PostGIS** used to geocode the spatial data.
@@ -22,6 +22,7 @@ The following tools and skills were used in this project:
 NOTE: While working on this project, I learnt beyond these skills. However, the above listed are the skills demonstrated in this project. You can read more details here.
 
 ## Cleaned Datasets
+
 The transformed datasets are found [in this link](https://drive.google.com/file/d/1wa1IaFUIJFqvB7G6rZWNFIq8D38qKn0D/view?usp=sharing) that contains two csv files. 
 
 The one named "cleaned_dataset2.csv" is the immediate dataset after geocoding while the one named "uber.csv" is the one uploaded to Amazon Redshift that contains only relevant columns. 
@@ -38,7 +39,7 @@ The one named "cleaned_dataset2.csv" is the immediate dataset after geocoding wh
 8. According to your answer in number 7, is it advisable to regsiter more base stations or stick to the already registered base stations?
 
 ## Methodology
----
+
 The following steps were carried out to go from to my unclean, unusable dataset to a clean and usable one: 
 
 * Downloading of the various datasets from the [uber github respository](https://github.com/fivethirtyeight/uber-tlc-foil-response).
